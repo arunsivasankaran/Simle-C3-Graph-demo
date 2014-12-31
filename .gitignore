@@ -3,4 +3,14 @@ dist
 .tmp
 .sass-cache
 bower_components
-dist/
+dist
+node_modules
+public
+.tmp
+.sass-cache
+.idea
+client/bower_components
+dist
+/server/config/local.env.js
+.DS_Store
+npm-debug.log
