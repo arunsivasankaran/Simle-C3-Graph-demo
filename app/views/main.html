@@ -1,0 +1,87 @@
+<!-- <div class="jumbotron"> -->
+<!-- <h1>'Allo, 'Allo!</h1> -->
+<!-- <p class="lead"> -->
+<!-- <img src="images/yeoman.png" alt="I'm Yeoman"><br> -->
+<!-- Always a pleasure scaffolding your apps. -->
+<!-- </p> -->
+<!-- <p><a class="btn btn-lg btn-success" ng-href="#">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p> -->
+<!-- </div> -->
+
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <table class="table table-bordered table-hover table-condensed">
+                <thead>
+                    <tr class="success">
+                        <th>Impressions</th>
+                        <th>Clicks</th>
+                        <th>Click Thru Rate</th>
+                        <th>Costs Per CLick</th>
+                        <th>Impressions Share</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>103,706</td>
+                        <td>3,111</td>
+                        <td>3.0%</td>
+                        <td>$2.00</td>
+                        <td>67%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div growl></div>
+
+
+<form class="form-horizontal">
+  <div class="form-group">
+    <label class="col-sm-3 control-label">Total Budget</label>
+    <div class="col-sm-6">
+      <p class="form-control-static">$50,000</p>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword" class="col-sm-3 control-label">Spend Amount</label>
+    <div class="col-sm-3">
+      <input ng-model="spendAmount" type="amount" class="form-control" id="inputAmount" placeholder="Amount">
+    </div>
+    <div class="col-sm-6">
+        <button type="submit" ng-click="verify(spendAmount, 50000)" class="btn btn--m btn--black btn--raised" lx-ripple>Spend</button>
+    </div>
+  </div>
+</form>
+
+
+<div class="container">
+    <div class="row clearfix">
+        <button ng-click="data1Only()" class="btn btn--m btn--blue btn--raised" lx-ripple>Saks Fifth Avenue</button>
+        <button ng-click="data2Only()" class="btn btn--m btn--orange btn--raised" lx-ripple>Neiman Marcus</button>
+        <button ng-click="sumData()" class="btn btn--m btn--green btn--raised" lx-ripple>Total</button>
+        <button ng-click="allData()" class="btn btn--m btn--black btn--raised" lx-ripple>All Data</button>
+    </div>
+</div>
+
+<!-- <div class="container">
+    <div class="row clearfix">
+    Total Budget : 5000
+    Spend Amount : 
+    </div>
+</div> -->
+
+<!-- <form class="form-inline">
+  <div class="form-group">
+    <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+    <div class="input-group">
+      <div class="input-group-addon">$</div>
+      <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+      <div class="input-group-addon">.00</div>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Transfer cash</button>
+</form> -->
+
+
