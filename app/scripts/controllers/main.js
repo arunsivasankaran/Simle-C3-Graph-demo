@@ -41,7 +41,9 @@ angular.module('bamDemoApp')
 
         var chart = c3.generate({
             data: {
+                x: 'x',
                 columns: [
+                    ['x', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14'],
                     ['Saks Fifth Avenue', 5000, 5000, 5000, 5000, 5000, 5000, 5000, 5000, 5000, 5000, 5000, 5000, 5000, 5000],
                     ['Neiman Marcus', 7000, 7000, 7000, 7000, 7000, 7000, 7000, 7000, 7000, 7000, 7000, 7000, 7000, 7000],
                     ['Total', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
@@ -49,7 +51,17 @@ angular.module('bamDemoApp')
             },
             subchart: {
                 show: true
+            },
+            axis: {
+              x : {
+                  tick: {
+                    count: 14,
+                    format: function (x) { return 'Jan ' + x; }
+                    //format: '%Y' // format string is also available for timeseries data
+                  }
+              }
             }
+
         });
 
         var data1 = ['Saks Fifth Avenue', clickData(), clickData(), clickData(), clickData(), clickData(), clickData(), clickData(), clickData(), clickData(), clickData(), clickData(), clickData(), clickData(), clickData()];
