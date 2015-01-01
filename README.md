@@ -11,7 +11,7 @@ npm install
 grunt serve
 ```
 ## Live Demo
-
+https://bam-demo.herokuapp.com/#/
 ## Author
 
 * **Arun Sivasankaran**
